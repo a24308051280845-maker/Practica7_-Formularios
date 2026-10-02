@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5 - Radio Buttons</title>
+</head>
+<body>
+    <h2>Formulario 5: Selección única con Radio</h2>
+    <form action="" method="post">
+        <label for="nombre_radio">Ingresa tu nombre:</label>
+        <input type="text" id="nombre_radio" name="nombre"><br><br>
+        
+        <p>Selecciona el máximo de estudios que tienes:</p>
+        <!-- Para que los botones radio sean excluyentes entre sí, deben compartir exactamente el mismo 'name' -->
+        <input type="radio" id="est_1" name="estudios" value="1">
+        <label for="est_1">Sin estudios</label><br>
+        
+        <input type="radio" id="est_2" name="estudios" value="2">
+        <label for="est_2">Primaria</label><br>
+        
+        <input type="radio" id="est_3" name="estudios" value="3">
+        <label for="est_3">Secundaria</label><br>
+        
+        <input type="radio" id="est_4" name="estudios" value="4">
+        <label for="est_4">Preparatoria</label><br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

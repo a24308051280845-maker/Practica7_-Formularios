@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4 - Checkbox</title>
+</head>
+<body>
+    <h2>Formulario 4: Casillas de selección múltiple</h2>
+    <form action="" method="post">
+        <label for="nombre_check">Ingresa tu nombre:</label>
+        <input type="text" id="nombre_check" name="nombre"><br><br>
+        
+        <p>Selecciona los lenguajes que conozcas:</p>
+        <!-- 'type="checkbox"' permite seleccionar una o varias opciones simultáneas -->
+        <!-- Se aconseja name="lenguajes[]" para transmitir una lista o arreglo al backend -->
+        <input type="checkbox" id="lang_java" name="lenguajes[]" value="Java">
+        <label for="lang_java">Java</label><br>
+        
+        <input type="checkbox" id="lang_python" name="lenguajes[]" value="Python">
+        <label for="lang_python">Python</label><br>
+        
+        <input type="checkbox" id="lang_csharp" name="lenguajes[]" value="C#">
+        <label for="lang_csharp">C#</label><br>
+        
+        <input type="checkbox" id="lang_flutter" name="lenguajes[]" value="Flutter">
+        <label for="lang_flutter">Flutter</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

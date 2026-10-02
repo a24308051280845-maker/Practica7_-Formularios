@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3 - Textarea</title>
+</head>
+<body>
+    <h2>Formulario 3: Área de texto y correo</h2>
+    <form action="" method="post">
+        <label for="nombre_textarea">Ingresa tu nombre:</label>
+        <input type="text" id="nombre_textarea" name="nombre"><br><br>
+        
+        <!-- 'type="email"' valida que el texto introducido cumpla la estructura de un correo (@ y dominio) -->
+        <label for="correo">Ingresa tu correo:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        
+        <!-- '<textarea>' habilita un campo multilínea. 'rows' indica alto en filas e 'cols' ancho en columnas -->
+        <label for="comentarios">Ingresa tus comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

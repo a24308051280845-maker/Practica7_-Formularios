@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 9 - Campos Ocultos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h2>Formulario 9: Uso de campos hidden</h2>
+    <form action="" method="post">
+        <!-- 'type="hidden"' oculta la entrada de la vista del usuario pero envía el 'value' al backend -->
+        <input type="hidden" name="hora" value="03:30">
+        
+        <label for="nombre_hidden">Ingresa tu nombre:</label>
+        <input type="text" id="nombre_hidden" name="nombre"><br><br>
+        
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa-solid fa-trash"></i></button>
+    </form>
+</body>
+</html>

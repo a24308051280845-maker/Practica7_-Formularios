@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 11 - Limitaciones</title>
+</head>
+<body>
+    <h2>Formulario 11: Restricciones de entrada (disabled, maxlength, readonly)</h2>
+    <form action="" method="post">
+        <!-- Atributo 'disabled': inhabilita la edición y omite el envío del valor al servidor -->
+        <label for="nombre_dis">Nombre (Deshabilitado):</label>
+        <input type="text" id="nombre_dis" name="nombre" disabled><br><br>
+        
+        <!-- Atributo 'maxlength="5"': define la cantidad límite de caracteres permitidos -->
+        <label for="pass_lim">Contraseña (máximo 5 caracteres):</label>
+        <input type="password" id="pass_lim" name="pass" maxlength="5"><br><br>
+        
+        <!-- Atributo 'readonly': no permite la modificación, pero SÍ envía la información al servidor -->
+        <label for="comentarios_ro">Comentarios (Solo lectura):</label><br>
+        <textarea id="comentarios_ro" name="comentarios" readonly>Este es mi comentario y no se puede borrar.</textarea>
+    </form>
+</body>
+</html>

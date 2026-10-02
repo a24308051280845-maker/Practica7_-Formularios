@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 8 - Subida de Archivos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h2>Formulario 8: Envío de archivos</h2>
+    <!-- Es MANDATORIO colocar 'enctype="multipart/form-data"' para que el formulario pueda transferir ficheros -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="nombre_file">Ingresa tu nombre:</label>
+        <input type="text" id="nombre_file" name="nombre"><br><br>
+        
+        <!-- 'type="file"' genera el diálogo nativo para seleccionar archivos del dispositivo -->
+        <label for="archivo">Adjunta tu archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+        
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa-solid fa-trash"></i></button>
+    </form>
+</body>
+</html>
